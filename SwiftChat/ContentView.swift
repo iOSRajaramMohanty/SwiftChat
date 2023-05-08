@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var userInfo = UserInfo() // 1
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+//        ChatScreen()
+        NavigationView {
+                    SettingsScreen()
+                }
+                .environmentObject(userInfo) // 2
+                .navigationViewStyle(StackNavigationViewStyle()) // 3
     }
 }
 

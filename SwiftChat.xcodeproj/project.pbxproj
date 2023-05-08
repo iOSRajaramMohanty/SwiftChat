@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27B3FE222A09080C00DEAABE /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3FE212A09080C00DEAABE /* ChatScreen.swift */; };
+		27B3FE242A09098400DEAABE /* ChatScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3FE232A09098400DEAABE /* ChatScreenModel.swift */; };
+		27B3FE262A09112E00DEAABE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3FE252A09112E00DEAABE /* Models.swift */; };
+		27B3FE282A0915F600DEAABE /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3FE272A0915F600DEAABE /* UserInfo.swift */; };
+		27B3FE2A2A09163000DEAABE /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3FE292A09163000DEAABE /* SettingsScreen.swift */; };
+		27B3FE2C2A09193400DEAABE /* ChatMessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3FE2B2A09193400DEAABE /* ChatMessageRow.swift */; };
 		27BFD94C2A09058C00868C37 /* SwiftChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BFD94B2A09058C00868C37 /* SwiftChatApp.swift */; };
 		27BFD94E2A09058C00868C37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BFD94D2A09058C00868C37 /* ContentView.swift */; };
 		27BFD9502A09058F00868C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27BFD94F2A09058F00868C37 /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27B3FE212A09080C00DEAABE /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		27B3FE232A09098400DEAABE /* ChatScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenModel.swift; sourceTree = "<group>"; };
+		27B3FE252A09112E00DEAABE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		27B3FE272A0915F600DEAABE /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		27B3FE292A09163000DEAABE /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		27B3FE2B2A09193400DEAABE /* ChatMessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageRow.swift; sourceTree = "<group>"; };
 		27BFD9482A09058C00868C37 /* SwiftChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BFD94B2A09058C00868C37 /* SwiftChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChatApp.swift; sourceTree = "<group>"; };
 		27BFD94D2A09058C00868C37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +66,12 @@
 			children = (
 				27BFD94B2A09058C00868C37 /* SwiftChatApp.swift */,
 				27BFD94D2A09058C00868C37 /* ContentView.swift */,
+				27B3FE212A09080C00DEAABE /* ChatScreen.swift */,
+				27B3FE2B2A09193400DEAABE /* ChatMessageRow.swift */,
+				27B3FE232A09098400DEAABE /* ChatScreenModel.swift */,
+				27B3FE252A09112E00DEAABE /* Models.swift */,
+				27B3FE272A0915F600DEAABE /* UserInfo.swift */,
+				27B3FE292A09163000DEAABE /* SettingsScreen.swift */,
 				27BFD94F2A09058F00868C37 /* Assets.xcassets */,
 				27BFD9512A09058F00868C37 /* SwiftChat.entitlements */,
 				27BFD9522A09058F00868C37 /* Preview Content */,
@@ -140,7 +158,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				27BFD94E2A09058C00868C37 /* ContentView.swift in Sources */,
+				27B3FE2A2A09163000DEAABE /* SettingsScreen.swift in Sources */,
+				27B3FE242A09098400DEAABE /* ChatScreenModel.swift in Sources */,
+				27B3FE222A09080C00DEAABE /* ChatScreen.swift in Sources */,
+				27B3FE2C2A09193400DEAABE /* ChatMessageRow.swift in Sources */,
 				27BFD94C2A09058C00868C37 /* SwiftChatApp.swift in Sources */,
+				27B3FE282A0915F600DEAABE /* UserInfo.swift in Sources */,
+				27B3FE262A09112E00DEAABE /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
