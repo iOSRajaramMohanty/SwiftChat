@@ -45,26 +45,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		27A95DA02A10CA47006E3CE1 /* View */ = {
+		2702D0C42A1DF97A00C521E0 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				27A95DA52A10CB32006E3CE1 /* Chat */,
-				27A95DA42A10CB15006E3CE1 /* Setting */,
-				27A95DA32A10CAFC006E3CE1 /* Root */,
+				27BFD94B2A09058C00868C37 /* SwiftChatApp.swift */,
+				27BFD94D2A09058C00868C37 /* ContentView.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2702D0C52A1DF9C600C521E0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2702D0CA2A1DFA1D00C521E0 /* Chat */,
+				2702D0C62A1DF9E100C521E0 /* Setting */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2702D0C62A1DF9E100C521E0 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				2702D0C82A1DF9FA00C521E0 /* Model */,
+				2702D0C72A1DF9F200C521E0 /* View */,
+				2702D0C92A1DFA0400C521E0 /* ViewModel */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		2702D0C72A1DF9F200C521E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27B3FE292A09163000DEAABE /* SettingsScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		27A95DA12A10CA54006E3CE1 /* ModelView */ = {
+		2702D0C82A1DF9FA00C521E0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				27A95DA72A10CB55006E3CE1 /* UserInfo */,
-				27A95DA62A10CB45006E3CE1 /* Chart */,
 			);
-			path = ModelView;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		27A95DA22A10CA80006E3CE1 /* Model */ = {
+		2702D0C92A1DFA0400C521E0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				27B3FE272A0915F600DEAABE /* UserInfo.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2702D0CA2A1DFA1D00C521E0 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				2702D0CB2A1DFA3100C521E0 /* Model */,
+				2702D0CC2A1DFA3A00C521E0 /* View */,
+				2702D0CD2A1DFA4200C521E0 /* ViewModel */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		2702D0CB2A1DFA3100C521E0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				27B3FE252A09112E00DEAABE /* MassageModels.swift */,
@@ -72,46 +114,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		27A95DA32A10CAFC006E3CE1 /* Root */ = {
+		2702D0CC2A1DFA3A00C521E0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				27BFD94B2A09058C00868C37 /* SwiftChatApp.swift */,
-				27BFD94D2A09058C00868C37 /* ContentView.swift */,
-			);
-			path = Root;
-			sourceTree = "<group>";
-		};
-		27A95DA42A10CB15006E3CE1 /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-				27B3FE292A09163000DEAABE /* SettingsScreen.swift */,
-			);
-			path = Setting;
-			sourceTree = "<group>";
-		};
-		27A95DA52A10CB32006E3CE1 /* Chat */ = {
-			isa = PBXGroup;
-			children = (
-				27B3FE212A09080C00DEAABE /* ChatScreen.swift */,
 				27B3FE2B2A09193400DEAABE /* ChatMessageRow.swift */,
+				27B3FE212A09080C00DEAABE /* ChatScreen.swift */,
 			);
-			path = Chat;
+			path = View;
 			sourceTree = "<group>";
 		};
-		27A95DA62A10CB45006E3CE1 /* Chart */ = {
+		2702D0CD2A1DFA4200C521E0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				27B3FE232A09098400DEAABE /* ChatScreenModel.swift */,
 			);
-			path = Chart;
-			sourceTree = "<group>";
-		};
-		27A95DA72A10CB55006E3CE1 /* UserInfo */ = {
-			isa = PBXGroup;
-			children = (
-				27B3FE272A0915F600DEAABE /* UserInfo.swift */,
-			);
-			path = UserInfo;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		27BFD93F2A09058B00868C37 = {
@@ -133,9 +150,8 @@
 		27BFD94A2A09058C00868C37 /* SwiftChat */ = {
 			isa = PBXGroup;
 			children = (
-				27A95DA22A10CA80006E3CE1 /* Model */,
-				27A95DA12A10CA54006E3CE1 /* ModelView */,
-				27A95DA02A10CA47006E3CE1 /* View */,
+				2702D0C42A1DF97A00C521E0 /* Application */,
+				2702D0C52A1DF9C600C521E0 /* Screens */,
 				27BFD94F2A09058F00868C37 /* Assets.xcassets */,
 				27BFD9512A09058F00868C37 /* SwiftChat.entitlements */,
 				27BFD9522A09058F00868C37 /* Preview Content */,
