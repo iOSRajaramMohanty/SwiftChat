@@ -8,12 +8,6 @@
 import SwiftUI
 
 struct ChatMessageRow: View {
-    static private let dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .none
-        formatter.timeStyle = .short
-        return formatter
-    }()
     
     let message: ReceivingChatMessage
     let isUser: Bool
@@ -30,7 +24,7 @@ struct ChatMessageRow: View {
                         .fontWeight(.bold)
                         .font(.system(size: 12))
                     
-                    Text(Self.dateFormatter.string(from: message.date))
+                    Text(DateFormatter.dateFormatter.string(from: message.date))
                         .font(.system(size: 10))
                         .opacity(0.7)
                 }

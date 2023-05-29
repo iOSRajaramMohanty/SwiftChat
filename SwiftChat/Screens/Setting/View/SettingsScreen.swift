@@ -18,7 +18,7 @@ struct SettingsScreen: View {
         Form {
             Section(header: Text("Username")) {
                 TextField("E.g. John Applesheed", text: $userInfo.username) // 3
-
+                
                 NavigationLink("Continue", destination: ChatScreen()) // 4
                     .disabled(!isUsernameValid)
             }

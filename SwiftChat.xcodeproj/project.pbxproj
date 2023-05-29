@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2702D0D32A21CBAD00C521E0 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2702D0D22A21CBAD00C521E0 /* DateFormat.swift */; };
 		27B3FE222A09080C00DEAABE /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3FE212A09080C00DEAABE /* ChatScreen.swift */; };
 		27B3FE242A09098400DEAABE /* ChatScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3FE232A09098400DEAABE /* ChatScreenModel.swift */; };
 		27B3FE262A09112E00DEAABE /* MassageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3FE252A09112E00DEAABE /* MassageModels.swift */; };
@@ -14,12 +15,13 @@
 		27B3FE2A2A09163000DEAABE /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3FE292A09163000DEAABE /* SettingsScreen.swift */; };
 		27B3FE2C2A09193400DEAABE /* ChatMessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B3FE2B2A09193400DEAABE /* ChatMessageRow.swift */; };
 		27BFD94C2A09058C00868C37 /* SwiftChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BFD94B2A09058C00868C37 /* SwiftChatApp.swift */; };
-		27BFD94E2A09058C00868C37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BFD94D2A09058C00868C37 /* ContentView.swift */; };
+		27BFD94E2A09058C00868C37 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BFD94D2A09058C00868C37 /* HomeView.swift */; };
 		27BFD9502A09058F00868C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27BFD94F2A09058F00868C37 /* Assets.xcassets */; };
 		27BFD9542A09058F00868C37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27BFD9532A09058F00868C37 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2702D0D22A21CBAD00C521E0 /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
 		27B3FE212A09080C00DEAABE /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
 		27B3FE232A09098400DEAABE /* ChatScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenModel.swift; sourceTree = "<group>"; };
 		27B3FE252A09112E00DEAABE /* MassageModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageModels.swift; sourceTree = "<group>"; };
@@ -28,7 +30,7 @@
 		27B3FE2B2A09193400DEAABE /* ChatMessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageRow.swift; sourceTree = "<group>"; };
 		27BFD9482A09058C00868C37 /* SwiftChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BFD94B2A09058C00868C37 /* SwiftChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChatApp.swift; sourceTree = "<group>"; };
-		27BFD94D2A09058C00868C37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		27BFD94D2A09058C00868C37 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		27BFD94F2A09058F00868C37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27BFD9512A09058F00868C37 /* SwiftChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftChat.entitlements; sourceTree = "<group>"; };
 		27BFD9532A09058F00868C37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				27BFD94B2A09058C00868C37 /* SwiftChatApp.swift */,
-				27BFD94D2A09058C00868C37 /* ContentView.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -57,6 +58,7 @@
 		2702D0C52A1DF9C600C521E0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2702D0D42A21CEA100C521E0 /* Root */,
 				2702D0CA2A1DFA1D00C521E0 /* Chat */,
 				2702D0C62A1DF9E100C521E0 /* Setting */,
 			);
@@ -131,6 +133,30 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		2702D0D12A21CB7D00C521E0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2702D0D22A21CBAD00C521E0 /* DateFormat.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2702D0D42A21CEA100C521E0 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				27BFD94D2A09058C00868C37 /* HomeView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		2702D0D52A21CFE700C521E0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				27BFD94F2A09058F00868C37 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		27BFD93F2A09058B00868C37 = {
 			isa = PBXGroup;
 			children = (
@@ -150,9 +176,10 @@
 		27BFD94A2A09058C00868C37 /* SwiftChat */ = {
 			isa = PBXGroup;
 			children = (
+				2702D0D52A21CFE700C521E0 /* Assets */,
+				2702D0D12A21CB7D00C521E0 /* Utility */,
 				2702D0C42A1DF97A00C521E0 /* Application */,
 				2702D0C52A1DF9C600C521E0 /* Screens */,
-				27BFD94F2A09058F00868C37 /* Assets.xcassets */,
 				27BFD9512A09058F00868C37 /* SwiftChat.entitlements */,
 				27BFD9522A09058F00868C37 /* Preview Content */,
 			);
@@ -237,11 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27BFD94E2A09058C00868C37 /* ContentView.swift in Sources */,
+				27BFD94E2A09058C00868C37 /* HomeView.swift in Sources */,
 				27B3FE2A2A09163000DEAABE /* SettingsScreen.swift in Sources */,
 				27B3FE242A09098400DEAABE /* ChatScreenModel.swift in Sources */,
 				27B3FE222A09080C00DEAABE /* ChatScreen.swift in Sources */,
 				27B3FE2C2A09193400DEAABE /* ChatMessageRow.swift in Sources */,
+				2702D0D32A21CBAD00C521E0 /* DateFormat.swift in Sources */,
 				27BFD94C2A09058C00868C37 /* SwiftChatApp.swift in Sources */,
 				27B3FE282A0915F600DEAABE /* UserInfo.swift in Sources */,
 				27B3FE262A09112E00DEAABE /* MassageModels.swift in Sources */,

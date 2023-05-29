@@ -17,7 +17,7 @@ struct ChatScreen: View {
     }
     
     private func onDisappear() {
-            model.disconnect()
+        model.disconnect()
     }
     
     private func onCommit() {
@@ -40,19 +40,19 @@ struct ChatScreen: View {
             // Chat history.
             ScrollView { // 1
                 ScrollViewReader { proxy in // 1
-                        LazyVStack(spacing: 8) {
-                            ForEach(model.messages) { message in
-                                // This one right here 👇, officer.
-                                ChatMessageRow(message: message, isUser: message.userID == userInfo.userID)
-                                    .id(message.id)
-                            }
-                        }
-                        .onChange(of: model.messages.count) { _ in // 3
-                            scrollToLastMessage(proxy: proxy)
+                    LazyVStack(spacing: 8) {
+                        ForEach(model.messages) { message in
+                            // This one right here 👇, officer.
+                            ChatMessageRow(message: message, isUser: message.userID == userInfo.userID)
+                                .id(message.id)
                         }
                     }
+                    .onChange(of: model.messages.count) { _ in // 3
+                        scrollToLastMessage(proxy: proxy)
+                    }
+                }
             }
-
+            
             // Message field.
             HStack {
                 TextField("Message", text: $message, onEditingChanged: { _ in }, onCommit: onCommit) // 2
